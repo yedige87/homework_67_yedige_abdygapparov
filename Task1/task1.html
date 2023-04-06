@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="task1.css" />
+    <title>Title</title>
+</head>
+<body>
+<div id="container">
+    <input class="start" id="add-item-btn" type="button" value="+">
+</div>
+
+
+<script>
+let button = document.getElementById('add-item-btn');
+	button.addEventListener('click', onButtonClick);
+let timerId = 0;	
+
+function onButtonClick() { 
+    let c = document.getElementById('container');
+	c.innerHTML += '<div class="messwindow" id="message">Hello World!<br/><input class="messbtn" id="msg-item-btn" type="button" onclick="CloseMessage();" value="Close"></div>';
+	timerId = setTimeout(function(){CloseMessage()}, 5000);
+	button.removeEventListener('click', onButtonClick);
+}
+
+
+function CloseMessage(){
+	let button = document.getElementById('add-item-btn');
+	button.addEventListener('click', onButtonClick);
+	b = document.getElementById('message');
+	b.remove();
+    clearTimeout(timerId);
+}
+</script>
+
+
+</body>
+</html>
