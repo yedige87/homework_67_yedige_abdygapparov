@@ -1,0 +1,22 @@
+.card {
+  display: flex;
+}
+
+.info {
+  margin-left: 10px;
+}
+
+.fieldGroup {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.fieldDiv {
+  text-transform: capitalize;
+}
+
+.valueDiv {
+  margin-left: 5px;
+  font-weight: 600;
+}
