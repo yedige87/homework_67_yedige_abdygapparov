@@ -1,0 +1,22 @@
+body{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.start{
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.messwindow{
+    background-color: greenyellow;
+    text-align: center;
+    border: solid 1px;
+    font-size: large;
+    width: 7%;
+    height:auto;
+}
+.messbtn{
+    font-family: Arial, Helvetica, sans-serif;
+}
